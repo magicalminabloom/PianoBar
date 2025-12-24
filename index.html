@@ -761,7 +761,7 @@
         // Load songs from JSON
         async function loadSongs() {
             try {
-                const response = await fetch('songs.json');
+                const response = await fetch('mina-bloom-songs.json');
                 allSongs = await response.json();
                 generateFilterButtons(); // Generate filters after loading songs
                 renderSongs();
