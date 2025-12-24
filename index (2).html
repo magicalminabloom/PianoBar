@@ -10,7 +10,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {
-            emailjs.init('X0pllflr_hw5gcmEB');
+            emailjs.init('rJFcYrCzL06Jkd1bq');
         })();
     </script>
     <style>
@@ -399,7 +399,7 @@
 </head>
 
 <body>
-    <h1>Patrick Boylan's Song List</h1>
+    <h1>Mina Bloom's Song List</h1>
 
     <!-- Filter Buttons (dynamically generated) -->
     <div class="filter-buttons" id="filterButtons">
@@ -428,10 +428,10 @@
                 <tr class="error-message" id="errorMessage">
                     <td colspan="3" style="text-align: center; padding: 20px;">
                         <p id="errorText" style="margin: 0 0 15px 0; font-size: 16px;">
-                            Pat doesn't know <strong id="searchTerm"></strong><br>
+                            Mina doesn't know <strong id="searchTerm"></strong><br>
                             <span id="filterContext" style="font-size: 16px;"></span>
                         </p>
-                        <button class="notify-btn" id="notifyBtn">Bump him to learn it</button>
+                        <button class="notify-btn" id="notifyBtn">Bump her to learn it</button>
                     </td>
                 </tr>
                 <!-- Empty rows for keyboard clearance -->
@@ -818,9 +818,9 @@
                 const searchTermElement = document.getElementById('searchTerm');
 
                 if (currentFilter.toLowerCase() === 'holiday') {
-                    errorText.innerHTML = `Pat doesn't know the holiday song<br><strong>${currentSearchTerm}</strong>`;
+                    errorText.innerHTML = `Mina doesn't know the holiday song<br><strong>${currentSearchTerm}</strong>`;
                 } else {
-                    errorText.innerHTML = `Pat doesn't know <strong id="searchTerm">${currentSearchTerm}</strong>`;
+                    errorText.innerHTML = `Mina doesn't know <strong id="searchTerm">${currentSearchTerm}</strong>`;
                 }
             } else {
                 errorMessage.classList.remove('show');
@@ -951,7 +951,7 @@
             const searchTerm = document.getElementById('searchTerm').textContent;
 
             // Send email via EmailJS
-            emailjs.send('service_aziu0jh', 'template_fkk6b0b', {
+            emailjs.send('service_9n4pqrq', 'template_hx37uza', {
                 song_request: searchTerm
             }).then(
                 function (response) {
